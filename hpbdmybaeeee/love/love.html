@@ -95,7 +95,6 @@
             <div class="circle2"></div>
         </div>
     </div>
-
     <div class="wrapperLetterForm">
         <div class="boxLetter">
             <i class="fa-solid fa-xmark"></i>
@@ -128,25 +127,19 @@
                             <span class="love-icon-notchange">&#10084;</span>
                             <span class="love-icon">Đọc nữa hong??</span>
                         </a>
-                        <a class="phaohoa-button btn-show-popup" onclick="showPopup('popup2','overlay2')">
-                            <span class="love-icon-phaohoa">&#10084;</span>Hết òi, xem pháo Hoa hong?
+                        <a href="../fireworks/index.html" target="_blank" class="phaohoa-button"">
+                            <span class=" love-icon-phaohoa">&#10084;</span>Hết òi, xem pháo Hoa hong?
                         </a>
 
                         <a class="phaohoa-button btn-show-popup" onclick="showPopup('popup','overlay')">
                             <span class="love-icon-phaohoa">&#10084;</span>Hay muốn xem cây thông ó?
                         </a>
 
-                        <div class="overlay2" id="overlay2"></div>
-                        <div class="popup-container2" id="popup2">
-                            <span class="close-icon" onclick="hidePopup('popup2','overlay2')">×</span>
-                            <iframe src="http://127.0.0.1:5500/hpbdmybae/fireworks/index.html" width="100%"
-                                height="100%" frameborder="0" marginheight="0" marginwidth="0"></iframe>
-                        </div>
                         <div class="overlay" id="overlay"></div>
                         <div class="popup-container" id="popup">
                             <span class="close-icon" onclick="hidePopup('popup','overlay')">×</span>
-                            <iframe src="http://127.0.0.1:5500/hpbdmybae/chrismasTree/index.html" width="100%"
-                                height="100%" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+                            <iframe src="../chrismasTree/index.html" width="100%" height="100%" frameborder="0"
+                                marginheight="0" marginwidth="0"></iframe>
                         </div>
                     </div>
                     <div class="mewmew2">
@@ -348,8 +341,8 @@
             setTimeout(() => {
                 letters.remove()
             }, 11000)
-            document.querySelectorAll(".buttonDocdi").forEach((item) => {
-                // document.querySelectorAll(".letters").forEach((item) => {
+            // document.querySelectorAll(".buttonDocdi").forEach((item) => {
+            document.querySelectorAll(".letters").forEach((item) => {
                 item.addEventListener("click", function () {
                     clearInterval(timeout)
                     $(".wrapperLetterForm").fadeIn()
