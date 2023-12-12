@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="love.css">
+    <title>Happy birthday my girl</title>
+    <link rel="icon" href="../image/heart.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="formInput">
+            <div class="boxHands">
+                <div class="handsCat">
+                    <img src="../image/handsCat.png" alt="">
+                </div>
+                <h1>HAPPY BIRTHDAY MY GIRL !!</h1>
+            </div>
+            <div class="boxSlider">
+                <div class="listSlider">
+                    <div class="slider">
+                        <img src="../image/302109914_3164875777060308_4333613515435244853_n.png" alt="">
+                    </div>
+                    <div class="slider">
+                        <img src="../image/289621419_3115862965294923_2341456188813096474_n.png" alt="">
+                    </div>
+                    <div class="slider">
+                        <img src="../image/326111687_627392275826415_5256077920378228167_n.png" alt="">
+                    </div>
+                </div>
+                <div class="left">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="right">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+
+            <div class="boxHandsInput">
+                <div class="handsCatImgInput">
+                    <img src="../image/handsCat.png" alt="">
+                </div>
+                <input type="text" id="inputField" placeholder="Gửi cho..." readonly>
+            </div>
+            <div class="buttonLove">
+                <div class="cricleBtn"></div>
+                <div class="buttonDocdi"></div>
+            </div>
+        </div>
+        <div class="boxLine">
+            <div class="boxCar">
+                <img src="../image/car.gif" alt="">
+            </div>
+            <div class="boxHeart">
+                <div class="heart1"></div>
+                <div class="heart2"></div>
+                <div class="heart3"></div>
+                <div class="heart4"></div>
+                <div class="heart5"></div>
+                <div class="heart6"></div>
+            </div>
+            <div class="ground-line">
+                <div>
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                    <span class="line4"></span>
+                    <span class="line5"></span>
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                    <span class="line4"></span>
+                    <span class="line5"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="loadingLove">
+        <div class="rhombus">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+        <div class="rhombus">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+        <div class="rhombus">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+        <div class="rhombus">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+    </div>
+
+    <div class="wrapperLetterForm">
+        <div class="boxLetter">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="formLetter">
+                <div class="heartLetter">
+                    <div class="heartLetterItem"></div>
+                </div>
+                <div class="heartLetter">
+                    <div class="heartLetterItem"></div>
+                </div>
+
+                <div class="wrapperLetter">
+                    <div class="giftbox">
+                        <div class="img">
+                            <img src="../image/giftbox.png" alt="">
+                        </div>
+                    </div>
+                    <div class="textLetter">
+                        <h2></h2>
+                        <p class="contentLetter"></p>
+                        <div class="heartAnimation">
+                            <img src="../image/heartAnimation.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="mewmew1">
+                        <img src="../image/mewmew.gif" alt="">
+                    </div>
+                    <div class="mewmew3">
+                        <a href="#" class="love-button">
+                            <span class="love-icon-notchange">&#10084;</span>
+                            <span class="love-icon">Đọc nữa hong??</span>
+                        </a>
+                        <a class="phaohoa-button btn-show-popup" onclick="showPopup('popup2','overlay2')">
+                            <span class="love-icon-phaohoa">&#10084;</span>Hết òi, xem pháo Hoa hong?
+                        </a>
+
+                        <a class="phaohoa-button btn-show-popup" onclick="showPopup('popup','overlay')">
+                            <span class="love-icon-phaohoa">&#10084;</span>Hay muốn xem cây thông ó?
+                        </a>
+
+                        <div class="overlay2" id="overlay2"></div>
+                        <div class="popup-container2" id="popup2">
+                            <span class="close-icon" onclick="hidePopup('popup2','overlay2')">×</span>
+                            <iframe src="http://127.0.0.1:5500/hpbdmybae/fireworks/index.html" width="100%"
+                                height="100%" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                        <div class="overlay" id="overlay"></div>
+                        <div class="popup-container" id="popup">
+                            <span class="close-icon" onclick="hidePopup('popup','overlay')">×</span>
+                            <iframe src="http://127.0.0.1:5500/hpbdmybae/chrismasTree/index.html" width="100%"
+                                height="100%" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                    </div>
+                    <div class="mewmew2">
+                        <img src="../image/mewmew.gif" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="before"></div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script>
+    function showPopup(popup, overlay) {
+        document.getElementById(popup).style.display = 'block';
+        document.getElementById(overlay).style.display = 'block';
+    }
+
+    function hidePopup(popup, overlay) {
+        document.getElementById(popup).style.display = 'none';
+        document.getElementById(overlay).style.display = 'none';
+    }
+
+    $(window).on('load', function (event) {
+        $('body').removeClass('preloading');
+        $('.loadingLove').delay(1000).fadeOut('fast');
+
+        function getHeart(e) {
+            let ele = document.createElement("div");
+            ele.className = "element"
+            document.querySelector("body").prepend(ele)
+            ele.style.left = e.clientX + 'px';
+            ele.style.top = e.clientY - 10 + 'px';
+            setTimeout(() => {
+                let text = document.querySelectorAll(".element")[0],
+                    directionX = Math.random() < .5 ? -1 : 1,
+                    directionY = Math.random() < .5 ? -1 : 1
+
+                text.style.left = parseInt(text.style.left) - (directionX * (Math.random() * 100)) + 'px';
+                text.style.top = parseInt(text.style.top) - (directionY * (Math.random() * 100)) + 'px';
+                text.style.opacity = 0;
+                text.style.transform = 'scale(0.4)'
+                text.innerHTML = "💗"
+                text.style.zIndex = "100"
+
+                setTimeout(() => {
+                    ele.remove()
+                }, 1000)
+            }, 10)
+        }
+        document.onmousemove = function (e) {
+            getHeart(e)
+        }
+        document.onclick = function (e) {
+            let ele = document.createElement("div");
+            ele.className = "heartRain"
+            document.querySelector("body").prepend(ele);
+            ele.style.left = e.clientX - 10 + 'px';
+            ele.style.top = e.clientY - 10 + 'px';
+            ele.innerHTML = "💗"
+            setTimeout(() => {
+                ele.style.top = "calc(85% - 25px)"
+            }, 100)
+            setTimeout(() => {
+                ele.style.opacity = 0
+            }, 3000)
+            setTimeout(() => {
+                ele.remove()
+            }, 4000)
+        }
+        document.onmousedown = (e) => {
+            getHeart(e)
+        }
+
+        const inputField = document.getElementById('inputField');
+        const textToType = "Trần Thư Xinh Đẹpppp";
+        const typingSpeed = 100; // milliseconds per character
+
+        let charIndex = 0;
+        function typeText() {
+            if (charIndex < textToType.length) {
+                inputField.value += textToType.charAt(charIndex);
+                charIndex++;
+                setTimeout(typeText, typingSpeed);
+            }
+            if (inputField.value.length == textToType.length) {
+                setTimeout(() => {
+                    document.querySelector(".buttonLove").style.transform = "translateY(0%)";
+                    document.querySelector(".cricleBtn").style.transform = "scale(0.1)"
+                }, 1000)
+                setTimeout(() => {
+                    document.querySelector(".cricleBtn").style.transform = "scale(1)"
+                    document.querySelector(".cricleBtn").innerHTML = "💗"
+                }, 2000)
+                setTimeout(() => {
+                    document.querySelector(".buttonLove").style.width = "120px"
+                    document.querySelector(".buttonDocdi").style.transform = "translateX(25px)"
+                }, 2500)
+                setTimeout(() => {
+                    document.querySelector(".buttonDocdi").style.width = "calc(100% - 25px)"
+                    document.querySelector(".buttonDocdi").style.height = "10px"
+                }, 3000)
+                setTimeout(() => {
+                    document.querySelector(".buttonDocdi").style.height = "30px"
+                }, 3500)
+                setTimeout(() => {
+                    document.querySelector(".buttonDocdi").innerHTML = " Nhấn dô đây"
+                }, 4000)
+            }
+        }
+
+        setTimeout(() => {
+            typeText();
+        }, 11500)
+    });
+
+    let indexText = 0;
+    let textLetter = document.querySelector('.textLetter h2');
+    const textLetterH2 = "Gửi em béee của anh";
+    let timoutTextLetter;
+
+    function textCharLetter(aac) {
+        if (indexText < textLetterH2.length) {
+            textLetter.textContent += textLetterH2[indexText];
+            indexText++;
+            setTimeout(indexText, 100);
+        }
+        else {
+            clearInterval(timoutTextLetter);
+            setTimeout(() => {
+                funcTimeoutLetterContent(aac)
+            }, 500)
+        }
+    }
+
+    function funcTimeoutLetter(acccca) {
+        indexText = 0;
+        textLetter.textContent = '';
+        clearInterval(timoutTextLetter);
+        timoutTextLetter = setInterval(() => {
+            textCharLetter(acccca);
+        }, 100)
+    }
+
+    let textLetterContent = document.querySelector('.contentLetter');
+    const loiChuc1 = "Ngày 25 tháng 12 năm 2023 là một ngày rất nà tuyệt dờiiii, đó là ngày mà thiên thần chính thức xuất hiện đó ní, là em bé của anh đóooo hehe. Anh chúc em bé tuổi mới thiệt nhiều niềm dui nhó, tràn đầy năng lượng lunnn, mãi mãiiiii xinh đẹp, luôn luôn đáng yêuuuu và ngày càng yêu anh nhó, anh yêu em bé của anh nhiềuuuuu lắm ó";
+    const loiChuc2 = "i love you 3000";
+    const loiChuc3 = "i love you rat nhieuuu";
+    const loiChuc4 = "loi chuc 4";
+    const loiChuc5 = "loi chuc 4";
+    const listLoiChuc = [loiChuc1, loiChuc2, loiChuc3, loiChuc4, loiChuc5];
+    const listDocbutton = ['Đọc nữa iiii', 'Năn nỉ đọc nữa', 'Còn nữa ó', 'Còn nữaaa', 'Còn nhìu lắmmm'];
+    var countCLick = 0
+    let timoutTextLetterContent;
+
+    function textCharLetterContent(abc) {
+        if (indexTextContent < abc.length) {
+            textLetterContent.textContent += abc[indexTextContent];
+            indexTextContent++;
+            setTimeout(indexTextContent, 50);
+        }
+        else {
+            clearInterval(timoutTextLetterContent)
+        }
+    }
+    function funcTimeoutLetterContent(abcc) {
+        indexTextContent = 0; // Reset indexTextContent
+        textLetterContent.textContent = '';
+        clearInterval(timoutTextLetterContent);
+        timoutTextLetterContent = setInterval(() => {
+            textCharLetterContent(abcc);
+        }, 50)
+    }
+    //end 
+
+    document.querySelector(".boxSlider .right").addEventListener("click", function () {
+        var slider = document.querySelectorAll(".slider")
+        document.querySelector(".listSlider").appendChild(slider[0])
+    })
+    document.querySelector(".boxSlider .left").addEventListener("click", function () {
+        var slider = document.querySelectorAll(".slider")
+        document.querySelector(".listSlider").prepend(slider[slider.length - 1])
+    })
+
+    document.querySelector(".buttonLove").addEventListener("click", function () {
+        let timeout = setInterval(() => {
+            var letters = document.createElement("div");
+            letters.className = "letters"
+            letters.innerHTML = '<img src="../image/letters.png" alt="">';
+            document.querySelector("body").prepend(letters)
+            let left = Math.floor(Math.random() * 100);
+            let rotate = Math.floor(Math.random() * 360);
+            letters.style.left = left + "%";
+            letters.style.top = "-10%";
+            letters.style.transform = `rotate(${rotate}deg)`;
+            setTimeout(() => {
+                letters.style.top = "100%";
+            }, 1000)
+            setTimeout(() => {
+                letters.remove()
+            }, 11000)
+            document.querySelectorAll(".buttonDocdi").forEach((item) => {
+                // document.querySelectorAll(".letters").forEach((item) => {
+                item.addEventListener("click", function () {
+                    clearInterval(timeout)
+                    $(".wrapperLetterForm").fadeIn()
+                    funcTimeoutLetter(listLoiChuc[0]);
+                    $(".phaohoa-button").fadeOut();
+                })
+            })
+        }, 500)
+    })
+
+    document.querySelector(".fa-xmark").addEventListener("click", function () {
+        indexTextContent = 0;
+        textLetterContent.textContent = '';
+        clearInterval(timoutTextLetterContent)
+        $(".wrapperLetterForm").fadeOut()
+    })
+
+    document.querySelector(".love-button").addEventListener("click", function () {
+        if (listLoiChuc.length == countCLick + 1) {
+            $(".love-button").fadeOut();
+            setTimeout(500);
+            $(".phaohoa-button").fadeIn();
+        } else {
+            document.querySelector(".love-icon").innerHTML = listDocbutton[countCLick]
+            countCLick += 1;
+            setTimeout(500);
+            indexTextContent = 0;
+            textLetterContent.textContent = '';
+            textCharLetter(listLoiChuc[countCLick]);
+            console.log(countCLick);
+        }
+    })
+
+</script>
+
+</html>
