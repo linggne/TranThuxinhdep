@@ -947,3 +947,12 @@ body {
     font-size: 30px;
     color: orangered;
 }
+
+.close-icon-1 {
+    position: absolute;
+    top: 18%;
+    right: 31%;
+    cursor: pointer;
+    font-size: 30px;
+    color: orangered;
+}
