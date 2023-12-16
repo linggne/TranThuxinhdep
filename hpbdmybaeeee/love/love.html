@@ -128,7 +128,7 @@
                         <img src="../image/mewmew.gif" alt="">
                     </div>
                     <div class="mewmew3">
-                        <a href="#" class="love-button">
+                        <a href="#" class="love-button" onclick="loadLoiChuc()">
                             <span class="love-icon-notchange">&#10084;</span>
                             <span class="love-icon">Đọc nữa hong??</span>
                         </a>
@@ -170,6 +170,9 @@
     }
 
     function hideLetter() {
+        indexTextContent = 0;
+        textLetterContent.textContent = '';
+        clearInterval(timoutTextLetterContent)
         $(".wrapperLetterForm").fadeOut();
     }
     $(window).on('load', function (event) {
@@ -225,7 +228,7 @@
 
         const inputField = document.getElementById('inputField');
         const textToType = "Trần Thư Xinh Đẹpppp";
-        const typingSpeed = 100; // milliseconds per character
+        const typingSpeed = 100;
 
         let charIndex = 0;
         function typeText() {
@@ -309,6 +312,7 @@
     const listDocbutton = ['Còn nữa ó', 'Còn nữaaaa', 'Đọc nữa hong', 'Đọc nữa ii', 'Còn nhìu lắmmm', 'Nữa nữa', 'Nữa iiii', 'Đọc thim i', 'Thim nữaaa', 'thêm nữa ii', 'Hết ù, yeuu em ó'];
     var countCLick = 0
     let timoutTextLetterContent;
+
     function textCharLetterContent(abc) {
         if (indexTextContent < abc.length) {
             textLetterContent.textContent += abc[indexTextContent];
@@ -319,6 +323,7 @@
             clearInterval(timoutTextLetterContent)
         }
     }
+
     function funcTimeoutLetterContent(abcc) {
         indexTextContent = 0; // Reset indexTextContent
         textLetterContent.textContent = '';
@@ -367,31 +372,21 @@
         }, 500)
     })
 
-    document.querySelector(".fa-xmark").addEventListener("click", function () {
-        indexTextContent = 0;
-        textLetterContent.textContent = '';
-        clearInterval(timoutTextLetterContent)
-        $(".wrapperLetterForm").fadeOut()
-    })
-
-    document.querySelector(".love-button").addEventListener("click", function () {
-        console.log(listLoiChuc.length, "||||||||||");
+    function loadLoiChuc() {
         if (listLoiChuc.length == countCLick + 1) {
-            console.log(listLoiChuc.length, "||||||||||");
             $(".love-button").fadeOut();
-            setTimeout(500);
+            setTimeout(1000);
             $(".phaohoa-button").fadeIn();
         } else {
-            console.log(listLoiChuc.length, "||||||||||>>>>>>>>>>>");
             document.querySelector(".love-icon").innerHTML = listDocbutton[countCLick]
             countCLick += 1;
-            setTimeout(500);
+            setTimeout(1000);
             indexTextContent = 0;
             textLetterContent.textContent = '';
-            textCharLetter(listLoiChuc[countCLick]);
-            console.log(countCLick);
+            // textCharLetter(listLoiChuc[countCLick]);
+            funcTimeoutLetter(listLoiChuc[countCLick]);
         }
-    })
+    }
 
 </script>
 
