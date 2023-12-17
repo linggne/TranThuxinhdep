@@ -21,7 +21,7 @@
                 <div class="handsCat">
                     <img src="../image/handsCat.png" alt="">
                 </div>
-                <h1>HAPPY BIRTHDAY MY GIRL !!</h1>
+                <h1>HELLO MY GIRLLL !!</h1>
             </div>
             <div class="boxSlider">
                 <div class="listSlider">
@@ -136,9 +136,13 @@
                                 <span class=" love-icon-phaohoa">&#10084;</span>Hết òi, xem pháo Hoa hong?
                         </a>
 
-                        <a class="phaohoa-button btn-show-popup" onclick="showPopup('popup','overlay')">
-                            <span class="love-icon-phaohoa">&#10084;</span>Hay muốn xem cây thông ó?
+                        <a href="../chrismasTree/index.html" target="_blank" class="phaohoa-button"">
+                            <span class=" love-icon-phaohoa">&#10084;</span>Hay muốn xem cây thông ó?
                         </a>
+
+                        <!-- <a class="phaohoa-button btn-show-popup" onclick="showPopup('popup','overlay')">
+                            <span class="love-icon-phaohoa">&#10084;</span>Hay muốn xem cây thông ó?
+                        </a> -->
 
                         <div class="overlay" id="overlay"></div>
                         <div class="popup-container" id="popup">
@@ -309,7 +313,7 @@
     const loiChuc10 = "Này hong phải lời chúc, mà là lời khẳng định, đó là ANH YÊUU EM BÉ TRẦN THƯ NHẤT NHẤT TRÊN ĐỜI LUÔN HONG BAO GIỜ HẾT YÊU EM BÉ HẾT Ó, nếu hong biết em bé Trần Thư là ai thì đó là vợ của Phan Đặng Nhật Linh ó ní =)))))";
     const loiChuc11 = "Chúc em bé một đêm giáng sinh an lành, một ngày sinh nhật tuyệt vời nhó, anh yêu em bé mãi mãi luônnnn, ký tên: pdnl dành tặng cho embecuapdnl!!"
     const listLoiChuc = [loiChuc1, loiChuc2, loiChuc3, loiChuc4, loiChuc5, loiChuc6, loiChuc7, loiChuc8, loiChuc9, loiChuc10, loiChuc11];
-    const listDocbutton = ['Còn nữa ó', 'Còn nữaaaa', 'Đọc nữa hong', 'Đọc nữa ii', 'Còn nhìu lắmmm', 'Nữa nữa', 'Nữa iiii', 'Đọc thim i', 'Thim nữaaa', 'thêm nữa ii', 'Hết ù, yeuu em ó'];
+    const listDocbutton = ['Còn nữa ó', 'Còn nữaaaa', 'Đọc nữa hong', 'Đọc nữa ii', 'Còn nhìu lắmmm', 'Nữa nữa', 'Nữa iiii', 'Đọc thim i', 'Thim nữaaa', 'thIm nữa ii', 'Hết ù, yêuu em ó'];
     var countCLick = 0
     let timoutTextLetterContent;
 
@@ -325,7 +329,7 @@
     }
 
     function funcTimeoutLetterContent(abcc) {
-        indexTextContent = 0; // Reset indexTextContent
+        indexTextContent = 0;
         textLetterContent.textContent = '';
         clearInterval(timoutTextLetterContent);
         timoutTextLetterContent = setInterval(() => {
@@ -360,8 +364,8 @@
             setTimeout(() => {
                 letters.remove()
             }, 11000)
-            document.querySelectorAll(".buttonDocdi").forEach((item) => {
-                // document.querySelectorAll(".letters").forEach((item) => {
+            // document.querySelectorAll(".buttonDocdi").forEach((item) => {
+            document.querySelectorAll(".letters").forEach((item) => {
                 item.addEventListener("click", function () {
                     clearInterval(timeout)
                     $(".wrapperLetterForm").fadeIn()
@@ -383,8 +387,7 @@
             setTimeout(1000);
             indexTextContent = 0;
             textLetterContent.textContent = '';
-            // textCharLetter(listLoiChuc[countCLick]);
-            funcTimeoutLetter(listLoiChuc[countCLick]);
+            textCharLetter(listLoiChuc[countCLick]);
         }
     }
 
