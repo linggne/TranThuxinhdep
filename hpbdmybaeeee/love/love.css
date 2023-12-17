@@ -178,8 +178,8 @@ body {
 
 .listSlider {
     position: relative;
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
     display: flex;
     overflow: hidden;
     border-radius: 10px;
@@ -192,7 +192,7 @@ body {
 }
 
 .listSlider img {
-    width: 200px;
+    width: 300px;
     height: 100%;
     object-fit: cover;
 }
@@ -882,7 +882,7 @@ body {
 .mewmew3 {
     position: absolute;
     bottom: 2%;
-    padding-left: 45%;
+    padding-left: 30%;
 }
 
 .mewmew1 img,
