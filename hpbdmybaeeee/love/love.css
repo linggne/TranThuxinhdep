@@ -17,7 +17,6 @@ body {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    top: 1.5rem;
 }
 
 .formInput {
@@ -116,7 +115,7 @@ body {
 .boxHands h1 {
     transform: rotate(20deg);
     transform-origin: top left;
-    padding-top: 9%;
+    padding-top: 5%;
     color: #fff;
     font-size: 130%;
     font-family: unset;
@@ -138,7 +137,7 @@ body {
 
 .boxSlider {
     position: relative;
-    margin-top: 70px;
+    margin-top: 46px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -261,6 +260,36 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+.chrismasTree-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 3px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #ff4081;
+    border-radius: 5px;
+    color: #ff4081;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.artitive-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 3px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #ff4081;
+    border-radius: 5px;
+    color: #ff4081;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
 .love-button:hover {
     background-color: #ff4081;
     color: #fff;
@@ -363,7 +392,7 @@ body {
 
 .boxCar {
     position: absolute;
-    bottom: 30%;
+    bottom: 20%;
     transform: translateX(-400px);
     z-index: 2;
     animation: car 4s 1s forwards, car1 2s 5s forwards;
@@ -526,7 +555,7 @@ body {
 .ground-line {
     width: 100%;
     position: absolute;
-    bottom: 29%;
+    bottom: 19%;
     left: 0;
     overflow: hidden;
     height: 10px;
@@ -827,12 +856,12 @@ body {
 
 .textLetter h2 {
     margin-top: 7%;
-    font-size: 130%;
+    font-size: 120%;
     font-family: ui-monospace;
 }
 
 .textLetter .contentLetter {
-    font-size: 19px;
+    font-size: 14px;
     text-align: center;
     padding: 0px 10px;
     margin-top: 10px;
@@ -882,7 +911,13 @@ body {
 .mewmew3 {
     position: absolute;
     bottom: 2%;
-    padding-left: 30%;
+    padding-left: 40%;
+}
+
+.mewmew4 {
+    position: absolute;
+    bottom: 2%;
+    padding-left: 31%;
 }
 
 .mewmew1 img,

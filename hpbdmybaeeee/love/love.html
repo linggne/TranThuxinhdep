@@ -201,14 +201,23 @@
                             <span class="love-icon-notchange">&#10084;</span>
                             <span class="love-icon">Đọc nữa hong??</span>
                         </a>
-                        <a href="../fireworks/index.html" target="_blank" class="phaohoa-button"">
+                    </div>
+                    <div class="mewmew4">
+                        <a href="../fireworks/index.html" target="_blank" class="phaohoa-button"
+                            onclick="hideButton('.phaohoa-button','.chrismasTree-button')" ">
                                 <span class=" love-icon-phaohoa">&#10084;</span>Hết òi, xem pháo Hoa hong?
                         </a>
 
-                        <!-- <a href="../chrismasTree/index.html" target="_blank" class="phaohoa-button"">
-                            <span class=" love-icon-phaohoa">&#10084;</span>Hay muốn xem cây thông ó?
-                        </a> -->
+                        <a href=" ../chrismasTree/index.html" target="_blank" class="chrismasTree-button"
+                            onclick="hideButton('.chrismasTree-button','.artitive-button')"">
+                            <span class=" love-icon-phaohoa">&#10084;</span>Xem cây thông lung linh i!
+                        </a>
 
+                        <a href="../slideIamge/hpbdbae.jpeg" target="_blank" class="artitive-button"">
+                            <span class=" love-icon-phaohoa">&#10084;</span>Xem xong òi nhấn dô đây nò
+                        </a>
+
+                        <!-- 
                         <a class="phaohoa-button btn-show-popup" onclick="showPopup('popup','overlay')">
                             <span class="love-icon-phaohoa">&#10084;</span>Hay muốn xem cây thông ó?
                         </a>
@@ -216,9 +225,9 @@
                         <div class="overlay" id="overlay"></div>
                         <div class="popup-container" id="popup">
                             <span class="close-icon" onclick="hidePopup('popup','overlay')">×</span>
-                            <iframe src="../slideIamge/hpbdbae.jpeg" width="100%" height="100%" frameborder="0"
+                            <iframe src="../chrismasTree/index.html" width="100%" height="100%" frameborder="0"
                                 marginheight="0" marginwidth="0"></iframe>
-                        </div>
+                        </div> -->
 
                     </div>
                     <div class="mewmew2">
@@ -370,8 +379,9 @@
     }
 
     let textLetterContent = document.querySelector('.contentLetter');
-    const loiChuc1 = "Ngày 25 tháng 12 năm 2023 là một ngày rất nà tuyệt dờiiii, đó là ngày mà thiên thần chính thức xuất hiện đó ní, là em bé của anh đóooo hehe, chắc ông trời biết mùa đông lạnh lém nên gửi xún một cô mặt trời nhỏ siuuuu siuuuu siuuu đáng iu luônnnnnnnnnn ó, rất là dễ thươngggggg xinh đẹppppp tuyệt dờiii lun ó";
-    const loiChuc2 = "Cảm ơn ông trờiii đã mang em bé đến bên anh ó, anh gất là sung sướng và hạnh phúc biết baooo, anh thươnggg em bé của anh vô cùng luôn, hy vọng hai đứa mình cùng nhau đón thêm hàng tỉ tỉ cái sinh nhật nữa nhóooo"
+    const loiChuc1 = "Ngày 25 tháng 12 năm 2023 là một ngày rất nà tuyệt dờiiii, đó là ngày mà thiên thần chính thức xuất hiện đó ní, là em bé của anh đóooo hehe";
+    const loiChuc1a = "Chắc ông trời biết mùa đông lạnh lém nên gửi xún một cô mặt trời nhỏ siuuuu siuuuu siuuu đáng iu luônnnnnnnnnn ó, rất là dễ thươngggggg xinh đẹppppp tuyệt dờiii lun ó";
+    const loiChuc2 = "Cảm ơn ông trờiii đã mang em bé đến bên anh ó, anh gất là sung sướng và hạnh phúc biết baooo, anh thươnggg em bé của anh vô cùng luôn, hy vọng hai đứa mình cùng nhau đón thêm hàng tỉ tỉ cái sinh nhật nữa nhóooo";
     const loiChuc3 = "Nhân dịp sinh nhật cho anh iu sến súa xíu iiiii, anh iuuu em bé của anh rất rấtttt là nhiều luôn, anh chúc em bé là luônnnnnn luônnnnn hạnh phúc và dui dẻ nhó, mãi mãi vẫn giữ nụ cười luôn ó, hong bao giờ được quên là em bé cườiii đáng yeuuuuuuu đến mức nào đâu đó :<";
     const loiChuc4 = "Anh còn nhớ lần đầu tiên gặp nhau, dù em bé đeo khẩu trang hoàiiiii à nhưng anh cũng thừa biết đây là một cô mỹ nữ nhó, rất là xinhhhh đẹp, thùy mị, nết na, chăm chỉ, giỏi giang, xinh xắn, đáng iu và tuyệt vời lắm lắm lun ó"
     const loiChuc5 = "Thiệt ra lúc đó hong phải tui lạnh lùng, hung dữ hay khó gần đâu, mà tui mún lấy le dí vợ tương lai của tui, mún người ta để ý tới tui thui à :< mà ai ngờ người ta ác cảm dí tui đâuuuuu huhu";
@@ -381,8 +391,8 @@
     const loiChuc9 = "Anh chúc bà xãaa mãi mãi yeuuu anh nhó, anh yeuuuu em bé nhất trên đời luôn ó, mãi mãi chỉ yêu 1 mình em bé huii, hong thèm nghĩ tới con nhỏ nào hết ó, mọi thứ là phù du, chỉ Trần Thư là tuyệt vời nhấtttt";
     const loiChuc10 = "Này hong phải lời chúc, mà là lời khẳng định, đó là ANH YÊUU EM BÉ TRẦN THƯ NHẤT NHẤT TRÊN ĐỜI LUÔN HONG BAO GIỜ HẾT YÊU EM BÉ HẾT Ó, nếu hong biết em bé Trần Thư là ai thì đó là vợ của Phan Đặng Nhật Linh ó ní =)))))";
     const loiChuc11 = "Chúc em bé một đêm giáng sinh an lành, một ngày sinh nhật tuyệt vời nhó, anh yêu em bé mãi mãi luônnnn, ký tên: pdnl dành tặng cho embecuapdnl!!"
-    const listLoiChuc = [loiChuc1, loiChuc2, loiChuc3, loiChuc4, loiChuc5, loiChuc6, loiChuc7, loiChuc8, loiChuc9, loiChuc10, loiChuc11];
-    const listDocbutton = ['Còn nữa ó', 'Còn nữaaaa', 'Đọc nữa hong', 'Đọc nữa ii', 'Còn nhìu lắmmm', 'Nữa nữaa', 'Nữa iiii', 'Đọc thim i', 'Thim nữaaa', 'Thim nữa ii', 'Hết ù, yêuu em ó'];
+    const listLoiChuc = [loiChuc1, loiChuc1a, loiChuc3, loiChuc4, loiChuc5, loiChuc6, loiChuc7, loiChuc8, loiChuc9, loiChuc10, loiChuc11];
+    const listDocbutton = ['Còn nữa ó', 'Còn ó nho', 'Còn nữaaaa', 'Đọc nữa hong', 'Đọc nữa ii', 'Còn nhìu lắmmm', 'Nữa nữaa', 'Nữa iiii', 'Đọc thim i', 'Thim nữaaa', 'Thim nữa ii', 'Hết ù, yêuu em ó'];
     var countCLick = 0
     let timoutTextLetterContent;
 
@@ -440,6 +450,8 @@
                     $(".wrapperLetterForm").fadeIn()
                     funcTimeoutLetter(listLoiChuc[0]);
                     $(".phaohoa-button").fadeOut();
+                    $(".chrismasTree-button").fadeOut();
+                    $(".artitive-button").fadeOut();
                 })
             })
         }, 500)
@@ -458,6 +470,11 @@
             textLetterContent.textContent = '';
             textCharLetter(listLoiChuc[countCLick]);
         }
+    }
+
+    function hideButton(buttonHide, buttonShow) {
+        $(buttonHide).fadeOut();
+        $(buttonShow).fadeIn();
     }
 
 </script>
